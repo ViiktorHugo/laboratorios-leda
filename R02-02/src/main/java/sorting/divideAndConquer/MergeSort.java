@@ -1,5 +1,7 @@
 package sorting.divideAndConquer;
 
+import java.util.PrimitiveIterator;
+
 import sorting.AbstractSorting;
 
 /**
@@ -11,8 +13,37 @@ import sorting.AbstractSorting;
 public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
-	public void sort(T[] array, int leftIndex, int rightIndex) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+	public void sort(T[] array, int leftIndex, int rightIndex) { //estou tendo problemas de tipo no merge sort :_(
+		if (array.length == 1) {
+			return;
+		}
+
+		Integer[] arrayAuxiliar = new Integer[rightIndex - leftIndex];
+		for (int i=leftIndex; i<=rightIndex; i++) {
+			arrayAuxiliar[i] = array[i];
+		}
+
+		//variáveis para apontamento
+		int primeiro = leftIndex;
+		int ultimo = rightIndex;
+		int meio = (leftIndex + rightIndex)/2;
+		int primeiroSegundaLista = meio+1;
+		int incrementador = primeiro;
+
+		while (primeiro<=meio && primeiroSegundaLista <= ultimo){ //mergesort
+			if (array[primeiro].compareTo(array[primeiroSegundaLista]) > 0) {
+				array[incrementador++] = arrayAuxiliar[primeiro++];
+			}
+			else{
+				array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
+			}
+		}
+
+		while (primeiro<=meio) {
+			array[incrementador++] = arrayAuxiliar[primeiro++];
+		}
+		while (primeiroSegundaLista<=ultimo){
+			array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
+		}
 	}
 }

@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import sorting.AbstractSorting;
+import sorting.divideAndConquer.MergeSort;
 
 public class StudentSortingTest {
 
@@ -36,10 +37,8 @@ public class StudentSortingTest {
 	 * do aluno
 	 */
 	private void getImplementation() {
-		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
-		// null
-		this.implementation = null;
-		Assert.fail("Implementation not provided");
+		this.implementation = new MergeSort<Integer>();
+		//Assert.fail("Implementation not provided");
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
