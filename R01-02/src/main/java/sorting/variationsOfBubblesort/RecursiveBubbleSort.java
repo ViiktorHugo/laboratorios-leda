@@ -3,7 +3,6 @@ package sorting.variationsOfBubblesort;
 import sorting.AbstractSorting;
 import util.Util;
 
-
 public class RecursiveBubbleSort<T extends Comparable<T>> extends
 		AbstractSorting<T> {
 
@@ -17,7 +16,7 @@ public class RecursiveBubbleSort<T extends Comparable<T>> extends
 	 */
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		
+
 		if(leftIndex == 1 | rightIndex ==1) {
 			return;
 		}
