@@ -21,7 +21,7 @@ public class BidirectionalBubbleSort<T extends Comparable<T>> extends
 				if(array[i].compareTo(array[i+1]) > 0) { //compara subindo
 					Util.swap(array, i, i+1);
 				}
-				if(array[j].compareTo(array[j-1]) < 0) { //compara trocando
+				if(array[j].compareTo(array[j-1]) < 0) { //compara descendo
 					Util.swap(array, j, j-1);
 				}
 			}
