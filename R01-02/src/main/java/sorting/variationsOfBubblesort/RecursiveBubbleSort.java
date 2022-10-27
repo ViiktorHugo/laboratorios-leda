@@ -16,16 +16,16 @@ public class RecursiveBubbleSort<T extends Comparable<T>> extends
 	 */
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-
-		if(leftIndex == 1 | rightIndex ==1) {
+		if (leftIndex==1 | rightIndex==1 | array.length==0) { //caso base, o array.lenght foi a maneira que achei para tratar o vetor vazio :_(
 			return;
 		}
 
-		for (int i=leftIndex; i< rightIndex - i; i ++){
-			if (array[leftIndex].compareTo(array[rightIndex]) > 0) {
-				Util.swap(array, leftIndex, rightIndex);
+		for (int i=leftIndex; i<rightIndex; i++){ //bubblesort
+			if(array[i].compareTo(array[i+1]) > 0){
+				Util.swap(array, i, i+1);
 			}
 		}
-		sort(array, leftIndex+1, rightIndex-1);
+
+		sort(array, leftIndex, rightIndex-1); //chamada recursiva
 	}
 }
