@@ -32,18 +32,18 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 		while (primeiro<=meio && primeiroSegundaLista <= ultimo){ //mergesort
 			if (array[primeiro].compareTo(array[primeiroSegundaLista]) > 0) {
-				array[incrementador++] = arrayAuxiliar[primeiro++];
+				//array[incrementador++] = arrayAuxiliar[primeiro++];
 			}
 			else{
-				array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
+				//array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
 			}
 		}
 
 		while (primeiro<=meio) {
-			array[incrementador++] = arrayAuxiliar[primeiro++];
+			//array[incrementador++] = arrayAuxiliar[primeiro++];
 		}
 		while (primeiroSegundaLista<=ultimo){
-			array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
+			//array[incrementador++] = arrayAuxiliar[primeiroSegundaLista++];
 		}
 	}
 }
