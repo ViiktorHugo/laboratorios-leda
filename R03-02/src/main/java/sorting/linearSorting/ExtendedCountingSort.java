@@ -18,7 +18,7 @@ public class ExtendedCountingSort extends AbstractSorting<Integer> {
 			return;
 		}
 
-		
+
 		//variáveis
 		int maior = 0;
 		int menor = 0;
@@ -36,12 +36,10 @@ public class ExtendedCountingSort extends AbstractSorting<Integer> {
 		//tratando os numeros negativos
 		if (menor < 0) {
 			menor = Math.abs(menor);
-		} else {
-			menor -= menor;
 		}
 		
 		//registrando frequencia dos elementos do array;
-		int[] arrayContagem = new int [(maior += menor) + 1];
+		int[] arrayContagem = new int [(maior + menor) + 1];
 		
 		for (int i2=leftIndex; i2<=rightIndex; i2++){
 			arrayContagem[array[i2] + menor] += 1;
