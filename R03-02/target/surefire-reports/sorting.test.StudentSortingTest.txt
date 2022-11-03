@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: sorting.test.StudentSortingTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec <<< FAILURE!
-testSort01(sorting.test.StudentSortingTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec <<< FAILURE!
+testSort01(sorting.test.StudentSortingTest)  Time elapsed: 0.016 sec  <<< FAILURE!
 arrays first differed at element [0]; expected:<4> but was:<30>
 	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
 	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
 	at org.junit.Assert.internalArrayEquals(Assert.java:534)
 	at org.junit.Assert.assertArrayEquals(Assert.java:285)
 	at org.junit.Assert.assertArrayEquals(Assert.java:300)
-	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:73)
-	at sorting.test.StudentSortingTest.testSort01(StudentSortingTest.java:78)
+	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:74)
+	at sorting.test.StudentSortingTest.testSort01(StudentSortingTest.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,15 +53,15 @@ Caused by: java.lang.AssertionError: expected:<4> but was:<30>
 	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
 	... 39 more
 
-testSort02(sorting.test.StudentSortingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testSort02(sorting.test.StudentSortingTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 arrays first differed at element [0]; expected:<4> but was:<6>
 	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
 	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
 	at org.junit.Assert.internalArrayEquals(Assert.java:534)
 	at org.junit.Assert.assertArrayEquals(Assert.java:285)
 	at org.junit.Assert.assertArrayEquals(Assert.java:300)
-	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:73)
-	at sorting.test.StudentSortingTest.testSort02(StudentSortingTest.java:83)
+	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:74)
+	at sorting.test.StudentSortingTest.testSort02(StudentSortingTest.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,8 +111,8 @@ arrays first differed at element [0]; expected:<0> but was:<4>
 	at org.junit.Assert.internalArrayEquals(Assert.java:534)
 	at org.junit.Assert.assertArrayEquals(Assert.java:285)
 	at org.junit.Assert.assertArrayEquals(Assert.java:300)
-	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:73)
-	at sorting.test.StudentSortingTest.testSort05(StudentSortingTest.java:98)
+	at sorting.test.StudentSortingTest.genericTest(StudentSortingTest.java:74)
+	at sorting.test.StudentSortingTest.testSort05(StudentSortingTest.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

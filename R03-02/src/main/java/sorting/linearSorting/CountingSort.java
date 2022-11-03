@@ -38,23 +38,28 @@ public class CountingSort extends AbstractSorting<Integer> {
 		}
 		
 		//registrando frequencia dos elementos do array;
-		int[] arrayContagem = new int [maior - menor];
+		int[] arrayContagem = new int [(maior - menor)+1];
 		
-		for (int i=leftIndex; i<rightIndex; i++){
-			arrayContagem[array[i]-1] += 1;
+		for (int i=leftIndex; i<=rightIndex; i++){
+			arrayContagem[array[i]] += 1;
 		}
 
 		//calculando a soma cumulativa do array auxiliar
-		for (int i=leftIndex; i<rightIndex; i++) {
-			arrayContagem[i] += arrayContagem[i-1];
+		for (int j=1; j<arrayContagem.length; j++) {
+			arrayContagem[j] = arrayContagem[j] + arrayContagem[j-1];
 		}
 
 		//ordenando o array
-		int[] arrayFinal = new int [maior - menor];
+		int[] arrayOrdenado = new int [array.length];
 
-		for (int i = leftIndex; i >= rightIndex; i++) {
-			arrayFinal[arrayContagem[array[i] - 1] -1] = array[i];
-			arrayContagem[array[i] - 1] -= 1;
+		for (int o=rightIndex; o>=leftIndex; o--) {
+			arrayOrdenado[arrayContagem[array[o]] -1] = array[o];
+			arrayContagem[array[o]] -= 1;
+		}
+
+		//insere o array ordenado para nas posições do array inicial
+		for (int i2=leftIndex; i2<=rightIndex; i2++) {
+			array[i2] = arrayOrdenado[i2];
 		}
 	}
 
