@@ -38,7 +38,7 @@ public class StudentSortingTest {
 	 * do aluno
 	 */
 	private void getImplementation() {
-		this.implementation = new CountingSort();
+		this.implementation = new ExtendedCountingSort();
 		//Assert.fail("Implementation not provided");
 	}
 
