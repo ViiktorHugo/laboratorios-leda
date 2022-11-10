@@ -1,0 +1,10 @@
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/QueueImpl.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/CircularQueue.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/QueueUnderflowException.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/QueueUsingStack.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/stack/Stack.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/stack/StackImpl.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/Queue.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/queue/QueueOverflowException.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/stack/StackOverflowException.java
+/home/victor.rangel/Documentos/laboratorios-leda/R05-02/src/main/java/adt/stack/StackUnderflowException.java
