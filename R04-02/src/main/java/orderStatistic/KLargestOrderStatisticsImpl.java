@@ -32,6 +32,9 @@ public class KLargestOrderStatisticsImpl<T extends Comparable<T>> implements KLa
 		// TODO Implement your code here
 		throw new UnsupportedOperationException("Not implemented yet!");
 		//este metodo deve obrigatoriamente usar o orderStatistics abaixo.
+
+		// verificar material e resolver estes exercícios.
+		
 	}
 
 	/**
