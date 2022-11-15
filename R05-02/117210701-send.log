@@ -7,3 +7,13 @@
   <level>FINE</level>
   <message>File 117210701-VICTOR HUGO DA SILVA RANGEL.zip was received. It was sent by VICTOR HUGO DA SILVA RANGEL from IP 150.165.42.109 at 10-11-2022 10*31*47</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-11-14T22:50:49.197-0300</date>
+  <logger>VICTOR HUGO DA SILVA RANGEL</logger>
+  <level>FINE</level>
+  <message>File 117210701-VICTOR HUGO DA SILVA RANGEL.zip was received. It was sent by VICTOR HUGO DA SILVA RANGEL from IP 192.168.0.178 at 14-11-2022 22*50*49</message>
+</record>
