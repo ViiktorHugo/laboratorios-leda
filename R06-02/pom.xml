@@ -65,7 +65,7 @@
 						</goals>
 						<configuration>
 							<!-- insira sua matricula -->
-							<matricula>11721701</matricula>
+							<matricula>117210701</matricula>
 							<!-- insira o ID correto da atividade e a turma -->
 							<roteiro>R06-02</roteiro>
 							<!-- NÃO MODIFIQUE AS TAGS ABAIXO -->
